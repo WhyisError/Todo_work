@@ -1,6 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import Home2 from "../views/Home2.vue";
+
 
 Vue.use(VueRouter);
 
@@ -19,6 +21,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+  {
+    path: "/Home2",
+    name: "Home2",
+    component: Home2,
+  },
+ 
 ];
 
 const router = new VueRouter({
